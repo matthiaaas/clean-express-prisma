@@ -2,6 +2,16 @@
 
 `clean-express-prisma` is an Express API boilerplate including a fresh setup of [Prisma](https://github.com/prisma/prisma), [Typescript](https://github.com/microsoft/TypeScript), [Prettier](https://github.com/prettier/prettier/), [Heroku](https://heroku.com) and file-based routing from [Express File Routing](https://github.com/matthiaaas/express-file-routing).
 
+## Getting Started
+
+Clone the repository or [Use this template](https://github.com/matthiaaas/clean-express-prisma/generate).
+
+```
+git clone https://github.com/matthiaaas/clean-electron-react.git YOUR-PROJECT-NAME
+cd YOUR-PROJECT-NAME
+yarn
+```
+
 ## Configuration
 
 ### Prisma Database Setup
