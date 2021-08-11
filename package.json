@@ -1,0 +1,33 @@
+{
+  "name": "clean-express-prisma",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node-dev --quiet app.ts",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "postinstall": "tsc",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma generate && prisma migrate deploy",
+    "db:reset": "prisma migrate reset"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^2.29.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-file-routing": "^1.1.2",
+    "helmet": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "15.14.1",
+    "prettier": "^2.3.2",
+    "prisma": "^2.29.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
