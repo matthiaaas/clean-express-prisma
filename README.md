@@ -25,9 +25,11 @@ yarn dev
 
 ## Production
 
+The template contains pre-configured Procfile and is ready to be deployed on [Heroku](https://heroku.com) out-of-the-box. For deployment on other platforms further configuration might be necessary.
+
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-(Not Recommended) Manually run build for production
+(Not Recommended) Manually run build scripts for production
 
 ```
 yarn build
@@ -37,7 +39,7 @@ yarn start
 
 ## File-based routing
 
-Files inside your project's `/routes` directory will get matched an url path automatically.
+Files inside your project's [`/routes`](/routes) directory will get matched an url path automatically.
 
 ```php
 ├── app.ts
@@ -59,8 +61,9 @@ Files inside your project's `/routes` directory will get matched an url path aut
 
 ## Route Example
 
+- `/routes/projects.ts`
+
 ```ts
-// /routes/projects.ts
 import prisma from "@/lib/prisma"
 
 export const get = async (req, res) => {
