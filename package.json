@@ -12,7 +12,8 @@
     "postinstall": "tsc",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma generate && prisma migrate deploy",
-    "db:reset": "prisma migrate reset"
+    "db:reset": "prisma migrate reset",
+    "db:studio": "prisma studio"
   },
   "license": "MIT",
   "dependencies": {
