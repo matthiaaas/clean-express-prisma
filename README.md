@@ -13,7 +13,7 @@ Create a (PostgreSQL) database and add it's url to `.env`.
 DATABASE_URL=postgresql://...
 ```
 
-**Note:** See [`Prisma Docs`](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases/connect-your-database-typescript-postgres/) and [PostgreSQL Installation](https://www.robinwieruch.de/postgres-sql-macos-setup) on how to get started.
+**Note:** See [`Prisma Docs`](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases/connect-your-database-typescript-postgres/) and [PostgreSQL Installation Guide (macOS)](https://www.robinwieruch.de/postgres-sql-macos-setup) on how to get started.
 
 ## Development
 
@@ -56,3 +56,28 @@ Files inside your project's `/routes` directory will get matched an url path aut
 - `/routes/users.ts` → /users
 
 **Note:** See [`express-file-routing`](https://github.com/matthiaaas/express-file-routing) for more details on how to use file-based routing.
+
+## Route Example
+
+```ts
+// /routes/projects.ts
+import prisma from "@/lib/prisma"
+
+export const get = async (req, res) => {
+  const projects = await prisma.projects.findMany()
+
+  return res.json(projects)
+}
+
+export const post = async (req, res) => {
+  const { name } = req.body
+
+  const project = await prisma.project.create({
+    data: {
+      name
+    }
+  })
+
+  return res.json(project)
+}
+```
