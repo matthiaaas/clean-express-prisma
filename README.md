@@ -19,7 +19,6 @@ yarn
 Create a (PostgreSQL) database and add it's url to `.env`.
 
 ```js
-// .env
 DATABASE_URL=postgresql://...
 ```
 
