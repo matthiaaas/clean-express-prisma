@@ -9,12 +9,15 @@ import { getUptime } from "./utils/helpers"
 
 const app = express()
 
+// json req body parsing
 app.use(express.json())
 
+// secure http headers
 app.use(helmet())
+// gzip compression
 app.use(compression())
 
-// creates file-based routing for /routes
+// file-based routing for /routes
 createRouter(app)
 
 app.listen(config.PORT, () => console.log(`🚀 Startup ${getUptime()}`))
