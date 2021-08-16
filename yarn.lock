@@ -274,10 +274,10 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-express-file-routing@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/express-file-routing/-/express-file-routing-1.1.2.tgz#aa1cfac71725137f064b40c844e51ed9c90f6736"
-  integrity sha512-2q+4Dn6fsCkmAaXUCP7kGPuCocoSfhOP96CkLfvs0iRU+YYvngjXBK7wSP/TIbSc4gVFYqRtLFYE/+p3GGo9cQ==
+express-file-routing@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/express-file-routing/-/express-file-routing-1.1.3.tgz#00280daf990eab83fb4f54c321a4853b41a5ea9b"
+  integrity sha512-S/Iw+S//un+E9hPOqBZ4TPH0PND+8/2JGrCJX5qlAPmZTYay59xXmfpJVeCnejA42rEqfA8unk0NTrTzZBgC5g==
 
 express@^4.17.1:
   version "4.17.1"
