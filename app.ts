@@ -1,5 +1,6 @@
 import helmet from "helmet"
 import express from "express"
+import compression from "compression"
 import createRouter from "express-file-routing"
 
 import config from "./config"
@@ -11,6 +12,7 @@ const app = express()
 app.use(express.json())
 
 app.use(helmet())
+app.use(compression())
 
 // creates file-based routing for /routes
 createRouter(app)
