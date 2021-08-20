@@ -1,6 +1,13 @@
 # [clean-express-prisma](https://github.com/matthiaaas/clean-express-prisma)
 
-`clean-express-prisma` is an Express API boilerplate including a fresh setup of [Prisma](https://github.com/prisma/prisma), [Typescript](https://github.com/microsoft/TypeScript), [Prettier](https://github.com/prettier/prettier/), [Heroku](https://heroku.com) and file-based routing from [Express File Routing](https://github.com/matthiaaas/express-file-routing).
+`clean-express-prisma` is a production-ready Express boilerplate including a fresh setup of [Prisma](https://github.com/prisma/prisma), [Typescript](https://github.com/microsoft/TypeScript), [Prettier](https://github.com/prettier/prettier/), [Heroku](https://heroku.com) and file-based routing from [Express File Routing](https://github.com/matthiaaas/express-file-routing).
+
+### Features
+
+- File-based routing
+- Preconfigured path aliases
+- Security middlewares for production
+- Cleanest possible project structure
 
 ## Getting Started
 
