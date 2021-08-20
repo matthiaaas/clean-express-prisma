@@ -3,9 +3,9 @@ import express from "express"
 import compression from "compression"
 import createRouter from "express-file-routing"
 
-import config from "./config"
+import config from "@/config"
 
-import { getUptime } from "./utils/helpers"
+import { getUptime } from "@/utils/helpers"
 
 const app = express()
 

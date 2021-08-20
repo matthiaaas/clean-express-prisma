@@ -6,10 +6,10 @@
   },
   "main": "dist/app.js",
   "scripts": {
-    "dev": "ts-node-dev --quiet app.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --quiet app.ts",
     "start": "node dist/app.js",
-    "build": "tsc",
-    "postinstall": "tsc",
+    "build": "tsc && tsc-alias",
+    "postinstall": "tsc && tsc-alias",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma generate && prisma migrate deploy",
     "db:reset": "prisma migrate reset",
@@ -31,6 +31,8 @@
     "prettier": "^2.3.2",
     "prisma": "^2.29.0",
     "ts-node-dev": "^1.1.8",
+    "tsc-alias": "^1.3.9",
+    "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5"
   }
 }
