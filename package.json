@@ -6,7 +6,7 @@
   },
   "main": "dist/app.js",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --quiet app.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --quiet --files app.ts",
     "start": "node dist/app.js",
     "build": "tsc && tsc-alias",
     "postinstall": "tsc && tsc-alias",
