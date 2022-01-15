@@ -7,7 +7,7 @@
   "main": "dist/app.js",
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --quiet --transpile-only --files app.ts",
-    "start": "node dist/app.js",
+    "start": "NODE_ENV=production node dist/app.js",
     "build": "tsc && tsc-alias",
     "postinstall": "tsc && tsc-alias",
     "db:migrate": "prisma migrate dev",
