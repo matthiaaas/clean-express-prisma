@@ -80,7 +80,7 @@ Files inside your project's [`/routes`](/routes) directory will get matched an u
 - `/routes/projects.ts`
 
 ```ts
-import prisma from "@/lib/prisma"
+import prisma from "~/lib/prisma"
 
 export const get = async (req, res) => {
   const projects = await prisma.projects.findMany()
