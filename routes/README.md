@@ -7,8 +7,8 @@ Files inside this directory will get matched an url path automatically.
 - `/routes/projects.ts` → /projects
 
 ```ts
-import prisma from "@/lib/prisma"
-import auth from "@/middlewares/auth"
+import prisma from "~/lib/prisma"
+import auth from "~/middlewares/auth"
 
 export const get = async (req, res) => {
   const projects = await prisma.projects.findMany()
