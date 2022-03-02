@@ -2,7 +2,7 @@
   "name": "clean-express-prisma",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": ">16.x"
   },
   "main": "dist/app.js",
   "scripts": {
@@ -17,22 +17,22 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@prisma/client": "^2.29.0",
+    "@prisma/client": "^3.10.0",
     "compression": "^1.7.4",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-file-routing": "^1.1.3",
-    "helmet": "^4.6.0"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-file-routing": "^2.0.0",
+    "helmet": "^5.0.2"
   },
   "devDependencies": {
-    "@types/compression": "^1.7.1",
+    "@types/compression": "^1.7.2",
     "@types/express": "^4.17.13",
     "@types/node": "15.14.1",
-    "prettier": "^2.3.2",
-    "prisma": "^2.29.0",
+    "prettier": "^2.5.1",
+    "prisma": "^3.10.0",
     "ts-node-dev": "^1.1.8",
-    "tsc-alias": "^1.3.9",
-    "tsconfig-paths": "^3.10.1",
-    "typescript": "^4.3.5"
+    "tsc-alias": "^1.6.3",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.6.2"
   }
 }
